@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}html,body{
+    width: 100%;
+    height: 100%;
+}
+.main{
+width: 100%;
+height: 100vh;
+background-color: azure;
+
+
+
+}.page{
+    height: 80%;
+    color: white;
+    background-image: url("https://cdn.pixabay.com/photo/2024/05/23/09/12/ai-generated-8782744_1280.jpg");
+     background-size: cover;
+
+} 
+header{
+    height: 120px;
+   display: flex;
+    align-items: center;
+    padding-top: 7%;
+    justify-content: center;
+}
+header>img{
+    height: 100px;  
+}
+ul{
+    list-style: none;
+    justify-content: space-between;
+    display: flex;
+    width: 50%;
+    margin-left: 10%;
+   
+    font-size: 30px;
+    font-weight: 700;
+    position: relative;
+
+}li{
+  
+   cursor: pointer;
+   transition: 0.25s;
+}
+
+li::before{
+    content: "";
+    width: 0;
+    height: 10%;
+    background-color: rgb(142, 9, 9);
+      cursor: pointer;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+ 
+
+}
+li:hover::before{
+    width: 100%; 
+    
+}
+.page1>h1{
+margin-left: 30%;
+margin-top: 5%;
+font-size: 70px;
+font-weight: 900;
+font-family:sans-serif ;
+}.page2{
+    height: 90vh;
+    width: 100%;
+    background-color: aliceblue;
+    padding-top: 7%;
+   
+   
+}.page2>h1{
+
+font-size: 50px;
+margin-left: 30%;
+}.page2>p{
+    width: 55%;
+    font-size: 30px;
+  
+    margin-left: 25%;
+    margin-top: 5%;
+}
+.icon{
+    height: 60%;
+    width: 98%;
+    display: flex;
+    margin-left: 2%;
+    margin-top: 10%;
+    
+}.p1>p{
+    width: 80%;
+}.p2>p{
+    width: 80%;
+}.p3>p{
+    width: 80%;
+}.p1>img{
+    margin-left: 15%;
+} .p2>img{
+    margin-left: 15%;
+}.p3>img{
+    margin-left: 20%;
+}
+ .page3{  
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(226, 217, 206);
+
+   
+}.page3>.left{
+    height: 30%;
+    width: 50%;
+   
+    margin-left: 8%;
+    margin-top: 8%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+
+
+}.left>p{
+    font-size: 50px;
+} .page4{  
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(226, 217, 206);
+   
+ 
+}.page4>.right{
+    height: 30%;
+    width: 50%;
+   
+    margin-left: 8%;
+    margin-top: 8%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+
+
+}.right>p{
+    font-size: 50px;
+}footer{
+    height: 80%;
+    width: 100%;
+    background-color: rgb(2, 2, 48);
+    display: flex;
+    color: white;
+   padding-top: 40px;
+ 
+}
+footer.left{
+    width: 50%;
+    
+}.middle{
+    width: 50%;
+    padding-left: 20%;
+    font-size: 25px;
+}.page5{
+    width: 100%;
+    height: 20%;
+    background-color: rgb(6, 106, 169);
+   
+    padding-left: 30%;
+ 
+  padding-top: 3%;
+ 
+}
+@media (max-width:600px) {
+    body{
+height: 100%;
+width: 100%;
+    }.page1{
+        width: 100%;
+        height: 100%;
+    }
+    header{
+        width: 100%;
+    }
+     header>img{
+        display: none;
+
+     }ul{
+       
+       font-size: 16px;
+   
+       margin-left: -5%;
+     }.page1>h1{
+        font-size: 35px;
+        
+     }.page2>h1{
+        font-size:30px;
+     }
+    .page2>p{
+        font-size: 20px;
+    }
+    .icon{
+        display: block;
+        height: 130%;
+        padding-left: 20%;
+        
+    }.icon>.p1, .p2,.p3 >p{
+         font-size: 20px;
+         padding-top: 30px;
+    } 
+    .page3{
+        width: 100%;
+        height: 80%;
+        margin-top: 20%;
+        display: block;
+        
+    }.page3>.right>img{
+        height: 320px;
+      
+    }.page3>.left{
+         width: 80%; 
+    }.page3>.left>h2{
+        font-size: 25px;
+        padding-left: 40%;
+        padding-top: 3%;
+    }.page3>.left>p{
+        font-size: 18px;
+        padding-top: 3%;
+
+    }
+    .page4{
+        width: 100%;
+        height: 100%;
+        margin-top: 50%;
+        display: block;
+        
+    }.page4>.left>img{
+        height: 320px;
+      
+    }.page4>.right{
+         width: 80%; 
+       
+    }.page4>.right>h2{
+        font-size: 25px;
+        padding-left: 35%;
+        position: absolute;
+        top: 367%;
+      
+    }.page4>.right>p{
+        font-size: 18px;
+        position: absolute;
+        top: 375%;
+     
+    }
+    footer{
+        width: 100%;
+        height:50%;
+   font-size: 10px;
+   margin-top: -36%;
+    }footer>.left> img{
+height: 120px;
+    }
+    footer>.middle{
+        font-size: 20px;
+        margin-left: -10%;
+    }footer>.right>h3{
+font-size: 15px;
+    }
+    .page5>h3{
+
+    margin-left: -18px;
+        font-size: 15px;
+        padding-top: 5%;
+      
+       } 
+       
+    
+}
